@@ -269,8 +269,12 @@ body{
 
 @media(max-width:760px) {
     
+.flex-container{
+        justify-content: center;
+}
 .box{
     width:90%;  
+    margin:10px auto;
     }
 #active-box{
     height:auto;
@@ -293,7 +297,7 @@ body{
 #active-box-txt{
     width:90%;
     height:auto;
-    margin:20px auto; 
+    margin:10px auto; 
 }
     
 }
