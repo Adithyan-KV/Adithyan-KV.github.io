@@ -1,0 +1,269 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.background{
+    z-index:-1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:#0f0e0e;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*the following two divs are used to determine the size of the runes in the background*/
+.rune{
+    height:100px;
+    width:100px;
+}
+
+.rune2{
+    height:70px;
+    width:70px;
+}
+
+/*styling properties for the 3 different sets (layers) of the runes floating in the background*/
+.set{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.set div{
+    position:absolute;
+    display:block;
+}
+
+/*sets a position to each individual runes in set1 (which are inherited by the other two sets) from where it animates randomly using some tweaks in values for animation*/
+.set div:nth-child(1)
+{
+    left:20%;
+    animation:animate 53s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(2)
+{
+    left:30%;
+    animation:animate 33s linear infinite;
+    animation-delay: -13s;
+}
+
+.set div:nth-child(3)
+{
+    left:27%;
+    animation:animate 55s linear infinite;
+    animation-delay: 5s;
+}
+
+.set div:nth-child(4)
+{
+    left:80%;
+    animation:animate 50s linear infinite;
+    animation-delay:-22s;
+}
+
+
+.set div:nth-child(5)
+{
+    left:16%;
+    animation:animate 50s linear infinite;
+}
+
+.set div:nth-child(6)
+{
+    left:20%;
+    animation:animate 30s linear infinite;
+}
+
+.set div:nth-child(7)
+{
+    left:28%;
+    animation:animate 40s linear infinite;
+}
+
+.set div:nth-child(8)
+{
+    left:30%;
+    animation:animate 60s linear infinite;
+}
+
+.set div:nth-child(9)
+{
+    left:93%;
+    animation:animate 20s linear infinite;
+}
+
+.set div:nth-child(10)
+{
+    left:13%;
+    animation:animate 20s linear infinite;
+}
+
+.set div:nth-child(11)
+{
+    left:16%;
+    animation:animate 20s linear infinite;
+}
+.set2{
+    transform: scale(1.2) rotateY(180deg);
+    filter: blur(2px);
+}
+
+.set3{
+    transform: scale(0.6) rotateX(180deg);
+    filter:blur(3px);
+}
+
+/*the animation which all of the runes will follow, this is general for all the symbols and additional tweaks are done in their individual sets or n-th child selectors as used earlier*/
+@keyframes animate{
+    0%{
+        top:-10%;
+        opacity:0;
+    }
+    
+    20%{
+        transform: translateX(20px) rotate(45deg);
+    }
+    
+    30%{
+       opacity:1; 
+    }
+    
+    60%{
+        transform: translateX(-30px) rotate(120deg);
+    }
+    
+    
+    100%{
+        top:110%;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*CSS FOR THE  CARDS OF THE INDIVIDUAL ITEMS FOLLOW, THE FLEXBOX IMPLEMENTATION AUTOMATICALLY YIELDS A   CERTAIN AMOUNT OF RESPONSIVENES TO THE TEMPLATE*/
+
+/*the container element for the item cards*/
+.flex-container{
+    margin-right: auto;
+    margin-left:auto;
+    height:80%;
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*box for individual item cards*/
+.box{
+    height:auto;
+    min-height:300px;
+    width:30%;
+    min-width:300px;
+    margin-top:20px;
+    margin-right:3%;
+    opacity:0.7;
+    background-color:black;
+}
+
+.box-image{
+    width:90%;
+    height:200px;
+    margin:20px auto;
+    background-image:url(img/map.png);
+}
+
+.box-text{
+    width:90%;
+    height:auto;
+    margin:20px auto; 
+}
+/*the main active box of the set*/
+#active-box{
+    height:auto;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin:50px auto;
+    width:70%;
+    min-width:300px;
+}
+
+#active-box-img{
+    margin:0px 20px 20px 20px;
+    height:50%;
+    width:80%;
+    background-color:white;
+}
+
+#active-box-txt{
+    margin:20px 20px;
+    height:auto;
+    width:80%;
+}
+
+.box-heading{
+    font-family:"Helvetica",sans-serif;
+    font-size:20px;
+    text-align: center;
+    color:#9b989f;
+}
+
+.box-details{
+    margin-top:10px;
+    font-family:"Helvetica",sans-serif;
+    font-size:14px;
+    color:#9b989f;
+}
+
+#active-box-heading{
+    font-size:30px; 
+}
+
+/*a flex box is implemented for the button container as well for responsiveness*/
+.button-container{
+    margin-bottom: 10px;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*the three buttons which are at the bottom of each box*/
+.button{
+    color:#9b989f;
+    font-family:"helvetica",sans-serif;
+    text-align:center;
+    width:250px;
+    font-size: 20px;
+    border:1px solid #9b989f;
+    margin:5px;
+    padding:3px 0px;
+}
+
+/*some special visual emphasis for the buttons of the active tile*/
+#main-button-container{
+    width:90%;
+}
+.active-button{
+    padding:5px 0px;
+    width:25%;
+    min-width:200px;
+}
+
+.button:hover{
+    color:white;
+    border:1px solid white;
+}
+
+.button:active{
+    color:white;
+    border:1px solid white;
+}
+

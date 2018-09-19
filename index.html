@@ -1,10 +1,123 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
     <head>
-        <title>Title bar</title>
-        <meta name="theme-color" content='#0b0b0b'>
+        <title>Fancy background</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"> 
     </head>
     <body>
-        random text.
+
+<!-------------------------------------------------------------------------------------------->
+    <!--the following code block is for the fancy floating rune symbol thingies going on in the background. It just is 3 layers (3 sets) of svgs which are given different settings and animations in the css-->
+        <div class="background">
+            <div class="set">
+                <div class="rune"><img src="./img/rune1.svg"></div>
+                <div class="rune"><img src="./img/rune2.svg"></div>
+                <div class="rune"><img src="./img/rune3.svg"></div>
+                <div class="rune"><img src="./img/rune4.svg"></div>
+                <div class="rune"><img src="./img/rune5.svg"></div>
+                <div class="rune"><img src="./img/rune6.svg"></div>
+                <div class="rune2"><img src="./img/rune8.svg"></div>
+                <div class="rune2"><img src="./img/rune9.svg"></div>
+                <div class="rune2"><img src="./img/rune10.svg"></div>
+                <div class="rune2"><img src="./img/rune11.svg"></div>
+                <div class="rune"><img src="./img/rune1.svg"></div>
+            </div>
+            <div class="set set2">
+                <div class="rune"><img src="./img/rune1.svg"></div>
+                <div class="rune"><img src="./img/rune2.svg"></div>
+                <div class="rune"><img src="./img/rune3.svg"></div>
+                <div class="rune"><img src="./img/rune4.svg"></div>
+                <div class="rune"><img src="./img/rune5.svg"></div>
+                <div class="rune"><img src="./img/rune6.svg"></div>
+                <div class="rune2"><img src="./img/rune8.svg"></div>
+                <div class="rune2"><img src="./img/rune9.svg"></div>
+                <div class="rune2"><img src="./img/rune10.svg"></div>
+                <div class="rune2"><img src="./img/rune11.svg"></div>
+            </div>
+            <div class="set set3">
+                <div class="rune"><img src="./img/rune1.svg"></div>
+                <div class="rune"><img src="./img/rune2.svg"></div>
+                <div class="rune"><img src="./img/rune3.svg"></div>
+                <div class="rune"><img src="./img/rune4.svg"></div>
+                <div class="rune"><img src="./img/rune5.svg"></div>
+                <div class="rune"><img src="./img/rune6.svg"></div>
+                <div class="rune2"><img src="./img/rune8.svg"></div>
+                <div class="rune2"><img src="./img/rune9.svg"></div>
+                <div class="rune2"><img src="./img/rune10.svg"></div>
+                <div class="rune2"><img src="./img/rune11.svg"></div>
+            </div>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------->
+        <!--the following code block should contain all the flexboxes for containing the actual content, I.e. the cards for each individual events/questions-->
+        <div class="flex-container">
+            <!-- code for the first block which will be given visual emphasis in the css as it is the current active card-->
+            <div class="box" id="active-box">
+                <div class="box-text" id="active-box-txt">
+                    <div class="box-heading" id="active-box-heading">Headings</div>
+                    <div class="box-details" id="active-box-details">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede
+                    </div>
+                </div>
+                <div class="box-image" id="active-box-img">
+                </div>
+                <div class="button-container" id="main-button-container">
+                    <div class="button active-button">Download</div>
+                    <div class="button active-button">Form</div>
+                    <div class="button active-button">Answers</div>
+                </div>
+            </div>
+            
+            <!--code for all the other tiles. which are uniformly stylized and the styles are inheritedd by the active element, except a few added  properties-->
+            
+            <div class="box">
+                <div class="box-image">
+                </div>
+                <div class="box-text">
+                    <div class="box-heading">Headings</div>
+                    <div class="box-details">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="button active-button">Download</div>
+                    <div class="button active-button">Form</div>
+                    <div class="button active-button">Answers</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                </div>
+                <div class="box-text">
+                    <div class="box-heading">Headings</div>
+                    <div class="box-details">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="button active-button">Download</div>
+                    <div class="button active-button">Form</div>
+                    <div class="button active-button">Answers</div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="box-image">
+                </div>
+                <div class="box-text">
+                    <div class="box-heading">Headings</div>
+                    <div class="box-details">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="button active-button">Download</div>
+                    <div class="button active-button">Form</div>
+                    <div class="button active-button">Answers</div>
+                </div>
+            </div>
+            
+        </div>
     </body>
 </html>
