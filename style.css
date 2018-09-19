@@ -44,8 +44,8 @@ body{
 /*sets a position to each individual runes in set1 (which are inherited by the other two sets) from where it animates randomly using some tweaks in values for animation*/
 .set div:nth-child(1)
 {
-    left:20%;
-    animation:animate 53s linear infinite;
+    left:0%;
+    animation:animate 20s linear infinite;
     animation-delay: -5s;
 }
 
@@ -85,19 +85,19 @@ body{
 
 .set div:nth-child(7)
 {
-    left:28%;
+    left:7%;
     animation:animate 40s linear infinite;
 }
 
 .set div:nth-child(8)
 {
-    left:30%;
+    left:50%;
     animation:animate 60s linear infinite;
 }
 
 .set div:nth-child(9)
 {
-    left:93%;
+    left:60%;
     animation:animate 20s linear infinite;
 }
 
@@ -107,11 +107,6 @@ body{
     animation:animate 20s linear infinite;
 }
 
-.set div:nth-child(11)
-{
-    left:16%;
-    animation:animate 20s linear infinite;
-}
 .set2{
     transform: scale(1.2) rotateY(180deg);
     filter: blur(2px);
@@ -263,7 +258,7 @@ body{
 
 .button:hover{
     color:white;
-    border:1px solid white;
+    border:2px solid white;
 }
 
 .button:active{
