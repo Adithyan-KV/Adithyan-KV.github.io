@@ -44,8 +44,8 @@ body{
 /*sets a position to each individual runes in set1 (which are inherited by the other two sets) from where it animates randomly using some tweaks in values for animation*/
 .set div:nth-child(1)
 {
-    left:0%;
-    animation:animate 20s linear infinite;
+    left:20%;
+    animation:animate 53s linear infinite;
     animation-delay: -5s;
 }
 
@@ -85,19 +85,19 @@ body{
 
 .set div:nth-child(7)
 {
-    left:7%;
+    left:28%;
     animation:animate 40s linear infinite;
 }
 
 .set div:nth-child(8)
 {
-    left:50%;
+    left:30%;
     animation:animate 60s linear infinite;
 }
 
 .set div:nth-child(9)
 {
-    left:60%;
+    left:93%;
     animation:animate 20s linear infinite;
 }
 
@@ -107,6 +107,11 @@ body{
     animation:animate 20s linear infinite;
 }
 
+.set div:nth-child(11)
+{
+    left:16%;
+    animation:animate 20s linear infinite;
+}
 .set2{
     transform: scale(1.2) rotateY(180deg);
     filter: blur(2px);
@@ -174,7 +179,7 @@ body{
     width:90%;
     height:200px;
     margin:20px auto;
-    background-image:url(img/map.png);
+    background-image:url(img/image-linguistics.png);
 }
 
 .box-text{
@@ -198,7 +203,9 @@ body{
     margin:0px 20px 20px 20px;
     height:50%;
     width:80%;
-    background-color:white;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #active-box-txt{
@@ -303,7 +310,8 @@ body{
     width:90%;
     height:200px;
     margin:20px auto;
-    background-image:url(img/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #active-box-txt{
