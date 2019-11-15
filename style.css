@@ -145,6 +145,7 @@ body{
 
 .footer_text{
     color:white;
+    text-decoration: none;
     font-family:"Helvetica";
     text-align: center;
     top:-50%;
