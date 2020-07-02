@@ -71,3 +71,24 @@ img{
     z-index: 100;
     text-shadow: 10px 10px 20px #000000;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .hero_text{
+        font-size:64px;
+    }
+    
+    .button{
+        font-size:16px;
+    }
+    
+    .button:hover{
+        font-size: 18px;
+    }
+    
+    img{
+        max-width: 200%;
+        transform: translate(-25%,5%);
+    }
+
+}
