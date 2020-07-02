@@ -11,6 +11,12 @@ body{
 /*    background-image: url(images/background_img2.png)*/
 }
 
+img{
+    max-width: 100%;
+    max-height: auto;
+    overflow: hidden;
+}
+
 .top-bar{
     height:10%;
     width:100%;
