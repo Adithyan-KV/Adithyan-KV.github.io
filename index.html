@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="neumorphic.css">
+    <script src="player-component.js"></script>
+    <title>Lobby</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="host">
+                <div class="host-box">
+                    <p>Game Id : 218</p>
+                    <img src="image.jpeg">
+                    <div class="info">
+                        <p><span>Host name: </span>Dude</p>
+                        <p><span>Lobby: </span>Public</p>
+                        <p><span>Players: </span>6</p>
+
+                        <div class="switch-container">
+                            <label>Bluffing</label>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <class class="players">
+                <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
+                <template id="player-component">
+                    <link rel="stylesheet" href="player-component.css">
+                    <div class="player-box">
+                        <img src="image.jpeg">
+                        <div class="text">
+                            <div class="username">Username</div>
+                            <div class="status">joined</div>
+                        </div>
+                        <button type="submit" id="accept">&check;</button>
+                        <button type="submit" id="deny">&times;</button>
+                    </div>
+                </template>
+            </class>
+        </div>
+    </div>
+</body>
+
+</html>
